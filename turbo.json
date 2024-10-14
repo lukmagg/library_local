@@ -1,0 +1,39 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": [ "PORT", "DATABASE_URL" ],
+  "pipeline": {
+    "db:generate": {
+      "cache": false,
+      "inputs": ["./apps/backend/src/core/prisma/schema.prisma"]
+    },
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "public/dist/**"],
+      "dependsOn": ["^db:generate", "^build"],
+      "env": ["NEXT_PUBLIC_API_HOST", "URL_API"]
+    },
+    "db:push": {
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^db:generate"]
+    },
+    "start": {
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
+   "test": {},
+    "test:watch": {
+      "cache": false, 
+      "persistent": true
+    },
+    "deploy": {
+      "dependsOn": ["build", "test", "lint"]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserObject {
+  id: ID
+  name: String
+  email: String
+  phone: String
+  roles: [String!]
+  isActive: Boolean
+  createdAt: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type AuthResponseObject {
+  token: String!
+  user: UserObject!
+}
+
+type Book {
+  id: ID!
+  title: String!
+  author: String!
+  edition: String
+  pages: Int
+  area: String
+  inventory: Int
+  lend: String
+  user: UserObject
+  userId: String
+  addedAt: DateTime
+}
+
+type Query {
+  revalidate: AuthResponseObject!
+  users(search: String, offset: Int = 0, limit: Int = 10): [UserObject!]!
+  user(id: ID!): UserObject!
+  books(search: String, offset: Int = 0, limit: Int = 10): [Book!]!
+  book(id: ID!): Book!
+  totalCount: Float!
+}
+
+type Mutation {
+  signup(signupInput: SignupInput!): AuthResponseObject!
+  signin(signinInput: SigninInput!): AuthResponseObject!
+  blockUser(id: ID!): UserObject!
+  updateUser(updateUserInput: UpdateUserInput!): UserObject!
+  createBook(createBookInput: CreateBookInput!): Book!
+  updateBook(updateBookInput: UpdateBookInput!): Book!
+  removeBook(id: String!): Book!
+
+  """Start Database"""
+  executedSeed: Boolean!
+}
+
+input SignupInput {
+  email: String!
+  name: String!
+  password: String!
+}
+
+input SigninInput {
+  email: String!
+  password: String!
+}
+
+input UpdateUserInput {
+  email: String
+  name: String
+  password: String
+  id: ID!
+  roles: [ValidRoles!]
+  isActive: Boolean
+}
+
+enum ValidRoles {
+  admin
+  teacher
+  student
+  tutor
+}
+
+input CreateBookInput {
+  title: String!
+  author: String!
+  edition: String
+  pages: Int
+  area: Area
+  inventory: Int
+  lend: Lend
+  userId: ID
+  addedAt: DateTime
+}
+
+enum Area {
+  STORY
+  NOVEL
+  THEATER
+  POETRY
+  BIOGRAPHY
+  PSYCHOLOGY
+  SOCIOLOGY
+  MYTHOLOGY
+  PHYSICAL_CHEMISTRY
+  MUSIC
+  EDUCATION
+  LANGUAGES
+  DICTIONARIES
+  BIOLOGY
+  SCIENCES
+  ART
+  ENTERTAINMENT
+  TECHNOLOGY
+  SPORTS
+  MAGAZINES
+}
+
+enum Lend {
+  PRESTADO
+  DISPONIBLE
+}
+
+input UpdateBookInput {
+  title: String
+  author: String
+  edition: String
+  pages: Int
+  area: Area
+  inventory: Int
+  lend: Lend
+  userId: ID
+  addedAt: DateTime
+  id: String!
+}

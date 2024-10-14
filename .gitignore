@@ -1,0 +1,12 @@
+.env
+.Dockerfile
+.dockerignore
+node_modules
+.turbo/turbo*
+.turbo
+.vercel
+.env.development.local
+env.ts
+TASKS.txt 
+
+apps/backend/src/core/prisma/tmp/

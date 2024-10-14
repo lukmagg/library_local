@@ -1,0 +1,7 @@
+{
+  "name": "apps",
+  "dependencies": {
+    "backend": "workspace:*",
+    "uwu-front": "workspace:*"
+  }
+}

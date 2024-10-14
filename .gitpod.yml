@@ -1,0 +1,11 @@
+tasks:
+  - name: Terminal 1
+    before: echo "Starting Terminal 1"
+    init: yarn && turbo db:generate && turbo build
+    command: turbo dev
+
+ports:
+  - port: 3000
+    onOpen: open-preview
+  - port: 5432
+    onOpen: ignore

@@ -1,0 +1,37 @@
+import { registerEnumType } from '@nestjs/graphql';
+
+export enum Area {
+  STORY = 'STORY',
+  NOVEL = 'NOVEL',
+  THEATER = 'THEATER',
+  POETRY = 'POETRY',
+  BIOGRAPHY = 'BIOGRAPHY',
+  PSYCHOLOGY = 'PSYCHOLOGY',
+  SOCIOLOGY = 'SOCIOLOGY',
+  MYTHOLOGY = 'MYTHOLOGY',
+  PHYSICAL_CHEMISTRY = 'PHYSICAL CHEMISTRY',
+  MUSIC = 'MUSIC',
+  EDUCATION = 'EDUCATION',
+  LANGUAGES = 'LANGUAGES',
+  DICTIONARIES = 'DICTIONARIES',
+  BIOLOGY = 'BIOLOGY',
+  SCIENCES = 'SCIENCES',
+  ART = 'ART',
+  ENTERTAINMENT = 'ENTERTAINMENT',
+  TECHNOLOGY = 'TECHNOLOGY',
+  SPORTS = 'SPORTS',
+  MAGAZINES = 'MAGAZINES',
+}
+
+export enum Lend {
+  PRESTADO = 'PRESTADO',
+  DISPONIBLE = 'DISPONIBLE',
+}
+
+registerEnumType(Area, {
+  name: 'Area',
+});
+
+registerEnumType(Lend, {
+  name: 'Lend',
+});

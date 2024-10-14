@@ -1,0 +1,78 @@
+{
+  "Library": {
+    "Navigator": {
+      "home": "Accueil",
+      "books": "Livres",
+      "users": "Utilisateurs",
+      "login": "Connexion",
+      "addBook": "Nouveau Livre",
+      "addUser": "Nouveau Utilisateur",
+      "logout": "Déconnexion"
+    },
+    "TableUsers": {
+      "name": "Nom",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "edit": "Éditer",
+      "action": "Action"
+    },
+    "TableBooks": {
+      "title": "Titre",
+      "author": "Auteur",
+      "area": "Domaine",
+      "lend": "État",
+      "action": "Action",
+      "edit": "Éditer",
+      "available": "Disponible",
+      "borrowed": "Emprunté",
+      "STORY": "CONTE",
+      "NOVEL": "ROMAN",
+      "THEATER": "THÉÂTRE",
+      "POETRY": "POÉSIE",
+      "BIOGRAPHY": "BIOGRAPHIE",
+      "PSYCHOLOGY": "PSYCHOLOGIE",
+      "SOCIOLOGY": "SOCIOLOGIE",
+      "MYTHOLOGY": "MYTHOLOGIE",
+      "PHYSICAL_CHEMISTRY": "CHIMIE PHYSIQUE",
+      "MUSIC": "MUSIQUE",
+      "EDUCATION": "ÉDUCATION",
+      "LANGUAGES": "LANGUES",
+      "DICTIONARIES": "DICTIONNAIRES",
+      "BIOLOGY": "BIOLOGIE",
+      "SCIENCES": "SCIENCES",
+      "ART": "ART",
+      "ENTERTAINMENT": "DIVERTISSEMENT",
+      "TECHNOLOGY": "TECHNOLOGIE",
+      "SPORTS": "SPORTS",
+      "MAGAZINES": "MAGAZINES"
+    },
+    "Filter": {
+      "search": "Rechercher"
+    },
+    "CreateBook": {
+      "information": "Informations du livre",
+      "title": "Titre",
+      "author": "Auteur",
+      "area": "Domaine",
+      "edition": "Édition",
+      "inventory": "Inventaire",
+      "lend": "État",
+      "action": "Action",
+      "edit": "Éditer",
+      "available": "Disponible",
+      "borrowed": "Emprunté",
+      "pages": "Pages",
+      "state": "État"
+    },
+    "CreateUser": {
+      "information": "Informations sur l'utilisateur",
+      "name": "Nom",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "area": "Domaine",
+      "edition": "Édition",
+      "inventory": "Inventaire",
+      "rol": "Rôle"
+    }
+  }
+}

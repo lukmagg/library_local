@@ -1,0 +1,11 @@
+{
+  "name": "packages",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@repo/eslint-config-custom": "*",
+    "@repo/jest-presets": "*",
+    "@repo/tsconfig": "*"
+  }
+}

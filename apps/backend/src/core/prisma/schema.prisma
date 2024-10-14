@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = "native"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @db.Uuid
+  name      String?
+  email     String?   @unique
+  phone     String?
+  address   String?   @db.VarChar(255)
+  roles     String[]
+  password  String?   @db.VarChar(255)
+  books     Book[]
+  isActive  Boolean   @default(true)
+  createdAt DateTime? @default(now())
+}
+
+model Book {
+  id        String   @id @default(uuid())
+  title     String
+  author    String?
+  addedAt   DateTime @default(now())
+  area      String?
+  edition   String?
+  inventory Int?
+  lend      String?
+  user      User? @relation(fields: [userId], references: [id])
+  userId    String? @db.Uuid
+  pages     Int?
+}
+

@@ -1,0 +1,78 @@
+{
+  "Library": {
+    "Navigator": {
+      "home": "Inicio",
+      "books": "Libros",
+      "users": "Usuarios",
+      "login": "Acceso",
+      "addBook": "Nuevo Libro",
+      "addUser": "Nuevo Usuario",
+      "logout": "Salir"
+    },
+    "TableUsers": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "edit": "Editar",
+      "action": "Acción"
+    },
+    "TableBooks": {
+      "title": "Titulo",
+      "author": "Autor",
+      "area": "Area",
+      "lend": "Estado",
+      "action": "Accion",
+      "edit": "Editar",
+      "available": "Disponible",
+      "borrowed": "Prestado",
+      "STORY": "CUENTO",
+      "NOVEL": "NOVELA",
+      "THEATER": "TEATRO",
+      "POETRY": "POESÍA",
+      "BIOGRAPHY": "BIOGRAFÍA",
+      "PSYCHOLOGY": "PSICOLOGÍA",
+      "SOCIOLOGY": "SOCIOLOGÍA",
+      "MYTHOLOGY": "MITOLOGÍA",
+      "PHYSICAL_CHEMISTRY": "FÍSICO QUÍMICA",
+      "MUSIC": "MÚSICA",
+      "EDUCATION": "EDUCACIÓN",
+      "LANGUAGES": "IDIOMAS",
+      "DICTIONARIES": "DICCIONARIOS",
+      "BIOLOGY": "BIOLOGÍA",
+      "SCIENCES": "CIENCIAS",
+      "ART": "ARTE",
+      "ENTERTAINMENT": "ENTRETENIMIENTO",
+      "TECHNOLOGY": "TECNOLOGÍA",
+      "SPORTS": "DEPORTES",
+      "MAGAZINES": "REVISTAS"
+    },
+    "Filter": {
+      "search": "Buscar"
+    },
+    "CreateBook": {
+      "information": "Informacion del libro",
+      "title": "Titulo",
+      "author": "Autor",
+      "area": "Area",
+      "edition": "Edicion",
+      "inventory": "Inventario",
+      "lend": "Estado",
+      "action": "Accion",
+      "edit": "Editar",
+      "available": "Disponible",
+      "borrowed": "Prestado",
+      "pages": "Paginas",
+      "state": "Estado"
+    },
+    "CreateUser": {
+      "information": "Información del Usuario",
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "area": "Área",
+      "edition": "Edición",
+      "inventory": "Inventario",
+      "rol": "Rol"
+    }
+  }
+}

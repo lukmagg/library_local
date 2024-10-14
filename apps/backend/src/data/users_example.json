@@ -1,0 +1,32 @@
+[
+    {
+        "name": "user1",
+        "email": "email1",
+        "isAdmin": false
+    },
+    {
+        "name": "user2",
+        "email": "email2",
+        "isAdmin": false
+    },
+    {
+        "name": "user3",
+        "email": "email3",
+        "isAdmin": false
+    },
+    {
+        "name": "user4",
+        "email": "email4",
+        "isAdmin": false
+    },
+    {
+        "name": "user5",
+        "email": "email5",
+        "isAdmin": false
+    },
+    {
+        "name": "user6",
+        "email": "email6",
+        "isAdmin": false
+    }
+]

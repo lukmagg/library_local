@@ -1,0 +1,78 @@
+{
+  "Library": {
+    "Navigator": {
+      "home": "Home",
+      "books": "Books",
+      "users": "Users",
+      "login": "Login",
+      "addBook": "Add Book",
+      "addUser": "Add User",
+      "logout": "Logout"
+    },
+    "TableUsers": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "edit": "Edit",
+      "action": "Action"
+    },
+    "TableBooks": {
+      "title": "Title",
+      "author": "Author",
+      "area": "Area",
+      "lend": "Lend",
+      "action": "Action",
+      "edit": "Edit",
+      "available": "Available",
+      "borrowed": "Borrowed",
+      "STORY": "STORY",
+      "NOVEL": "NOVEL",
+      "THEATER": "THEATER",
+      "POETRY": "POETRY",
+      "BIOGRAPHY": "BIOGRAPHY",
+      "PSYCHOLOGY": "PSYCHOLOGY",
+      "SOCIOLOGY": "SOCIOLOGY",
+      "MYTHOLOGY": "MYTHOLOGY",
+      "PHYSICAL_CHEMISTRY": "PHYSICAL CHEMISTRY",
+      "MUSIC": "MUSIC",
+      "EDUCATION": "EDUCATION",
+      "LANGUAGES": "LANGUAGES",
+      "DICTIONARIES": "DICTIONARIES",
+      "BIOLOGY": "BIOLOGY",
+      "SCIENCES": "SCIENCES",
+      "ART": "ART",
+      "ENTERTAINMENT": "ENTERTAINMENT",
+      "TECHNOLOGY": "TECHNOLOGY",
+      "SPORTS": "SPORTS",
+      "MAGAZINES": "MAGAZINES"
+    },
+    "Filter": {
+      "search": "Search"
+    },
+    "CreateBook": {
+      "information": "Book Information",
+      "title": "Title",
+      "author": "Author",
+      "area": "Area",
+      "edition": "Edition",
+      "inventory": "Inventory",
+      "lend": "Lend",
+      "action": "Action",
+      "edit": "Edit",
+      "available": "Available",
+      "borrowed": "Borrowed",
+      "pages": "Pages",
+      "state": "State"
+    },
+    "CreateUser": {
+      "information": "User Information",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "area": "Area",
+      "edition": "Edition",
+      "inventory": "Inventory",
+      "rol": "Rol"
+    }
+  }
+}
